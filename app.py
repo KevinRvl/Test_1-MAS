@@ -59,7 +59,7 @@ PROVIDERS = [
         "name": "🔵 Google Gemini",
         "type": "gemini",
         "secret": "GEMINI_API_KEY",
-        "model": ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-3.8-flash"],
+        "model": ["gemini-3.8-flash", "gemini-3.1-flash-lite", "gemini-3.8-pro"],
         "vision": True,
         "max_chars": 60_000,
         "retries": 2,
