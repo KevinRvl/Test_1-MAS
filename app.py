@@ -56,20 +56,6 @@ st.caption("Multiple AI Solver · confronta più IA in parallelo")
 # -----------------------------------------------------------------------------
 PROVIDERS = [
     {
-        """
-        "name": "🔵 Google Gemini",
-        "type": "gemini",
-        "secret": "GEMINI_API_KEY",
-        # Se il primo è sovraccarico (503) o non esiste più, prova i successivi
-        "model": ["gemini-3-flash-preview", "gemini-3.8-flash", "gemini-3.1-flash-lite"],
-        "vision": True,
-        "max_chars": 60_000,  # più testo = più lento; gli estratti migliori bastano
-        "retries": 0,  # su 503/429 passa subito al modello successivo, senza attese
-        # Se il primo modello non risponde entro 7 secondi, interroga in parallelo il
-        # successivo e prende la prima risposta (evita attese di 30+ secondi).
-        "hedge_after": 7,
-        """
-        
         "name": "🔵 Google Gemini",
         "type": "gemini",
         "secret": "GEMINI_API_KEY",
