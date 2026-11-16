@@ -1,0 +1,6 @@
+streamlit
+google-genai
+openai
+pillow
+pypdf
+streamlit-paste-button
